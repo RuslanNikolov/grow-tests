@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List should render the UI with items 1`] = `
+Array [
+  <ListItem
+    id={1}
+    image="thumbnailUrl1"
+    key="1"
+    title="title1"
+    url="url1"
+  />,
+  <ListItem
+    id={2}
+    image="thumbnailUrl2"
+    key="2"
+    title="title2"
+    url="url2"
+  />,
+]
+`;
+
+exports[`List should render the UI without items 1`] = `
+<div>
+   No items found.
+</div>
+`;

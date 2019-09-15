@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem should render the UI with image 1`] = `
+<div
+  className="listItem"
+>
+  <div
+    className="listItem__image"
+    style={
+      Object {
+        "backgroundImage": "url(thumbnailUrl1)",
+      }
+    }
+  />
+  <div
+    className="listItem__info"
+  >
+    <span
+      className="listItem__title"
+    >
+      title1
+    </span>
+    <a
+      className="listItem__Link"
+      href="url1"
+      target="_blank"
+    >
+      Link
+    </a>
+  </div>
+</div>
+`;
+
+exports[`ListItem should render the UI without image 1`] = `
+<div
+  className="listItem"
+>
+  <span
+    className="noImage"
+  />
+  <div
+    className="listItem__info"
+  >
+    <span
+      className="listItem__title"
+    >
+      title1
+    </span>
+    <a
+      className="listItem__Link"
+      href="url1"
+      target="_blank"
+    >
+      Link
+    </a>
+  </div>
+</div>
+`;
