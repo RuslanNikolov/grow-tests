@@ -12,18 +12,19 @@
     "jest": "23.6.0",
     "jest-enzyme": "7.0.2",
     "moxios": "^0.4.0",
-    "react": "16.8.6",
+    "react": "16.9.0",
     "react-dom": "16.8.6",
     "react-scripts": "2.1.8",
     "sinon": "^7.4.2"
   },
   "devDependencies": {
+    "@testing-library/react": "^9.1.4",
     "typescript": "3.3.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom -u",
+    "test": "react-scripts test --env=jsdom -u --verbose=false",
     "test:coverage": "react-scripts test --coverage",
     "eject": "react-scripts eject"
   },

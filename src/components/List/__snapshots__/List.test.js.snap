@@ -20,7 +20,9 @@ Array [
 `;
 
 exports[`List should render the UI without items 1`] = `
-<div>
+<div
+  className="no-items"
+>
    No items found.
 </div>
 `;

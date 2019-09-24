@@ -21,18 +21,16 @@ const mockItems = [
 describe('List', () => {
     let wrapper;
     it('should render the UI with items', () => {
-        wrapper = shallow(
-            <List
-                items={mockItems}
-            />)
+        wrapper = shallow(<List items={mockItems} />)
+        expect(wrapper.find('ListItem')).toExist()
+        expect(wrapper.find('div.no-items')).not.toExist()
         expect(toJson(wrapper)).toMatchSnapshot()
     })
 
     it('should render the UI without items', () => {
-        wrapper = shallow(
-            <List
-                items={[]}
-            />)
+        wrapper = shallow(<List items={[]} />)
+        expect(wrapper.find('ListItem')).not.toExist()
+        expect(wrapper.find('div.no-items')).toExist()
         expect(toJson(wrapper)).toMatchSnapshot()
     })
 

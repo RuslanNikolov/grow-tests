@@ -1,7 +1,8 @@
 import sinon from 'sinon';
 import { transformData } from './transform';
 
-sinon.stub(Math, 'random').returns(0.2);
+
+global.Math = { random: () => 0.2 }
 
 const mockItems = [
     {

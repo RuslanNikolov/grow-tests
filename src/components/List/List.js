@@ -7,7 +7,7 @@ const List = props => {
   return items.length > 0 ? (
     items.map(item => <ListItem key={item.id} {...item} />)
   ) : (
-    <div> No items found.</div>
-  );
+      <div className="no-items"> No items found.</div>
+    );
 };
 export default List;

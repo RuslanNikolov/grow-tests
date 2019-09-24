@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import List from "../../components/List/List";
 import { getData } from "../../helpers/requests";
 import { transformData } from "../../helpers/transform";
+import { servicesVersion } from "typescript";
 
-async function loadData(setError, setItems, setIsLoading) {
+export async function loadData(setError, setItems, setIsLoading) {
   const data = await getData();
   setError(data.error);
   setItems(transformData(data.items));
@@ -34,7 +35,7 @@ const ListContainer = props => {
         onClick={onClick}
         disabled={isLoading}
       />
-      {error ? <div className="error">{error}</div> : <List items={items} />}
+      {error ? <div className="error">{error}</div> : <List data-testid="list" items={items} />}
     </>
   );
 };

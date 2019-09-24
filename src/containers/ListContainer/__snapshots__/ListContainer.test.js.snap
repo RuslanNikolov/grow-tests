@@ -10,9 +10,12 @@ exports[`ListContainer should render the correct initial UI 1`] = `
     value="Refresh"
   />
   <List
+    data-testid="list"
     items={Array []}
   >
-    <div>
+    <div
+      className="no-items"
+    >
        No items found.
     </div>
   </List>

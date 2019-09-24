@@ -21,11 +21,12 @@ describe('ListItem', () => {
 
     it('should render the UI with image', () => {
         wrapper = shallow(<ListItem {...mockItem1} />)
-
+        expect(wrapper.find('div.listItem__image')).toExist()
         expect(toJson(wrapper)).toMatchSnapshot()
     })
     it('should render the UI without image', () => {
         wrapper = shallow(<ListItem {...mockItem2} />)
+        expect(wrapper.find('div.listItem__image')).not.toExist()
 
         expect(toJson(wrapper)).toMatchSnapshot()
     })
